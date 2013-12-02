@@ -1,0 +1,42 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.top { background:url('../images/fire-bokeh-background-red.jpg'); background-sizz:cover; }
+
+.main-heading { letter-spacing:-1px; color:#787878; margin:35px 0; }
+.main-heading span { font-weight:bold; color:#e64a41; border-bottom:1px dotted #e64a41; }
+
+#features { transition:all ease-in-out 0.2s; }
+
+.feature-box { float:left; margin:7px 5px; width:100%; }
+.feature-box .feature-icon { float:left; margin:12px 10px 0 0; padding:5px 0 0 0; height:50px; width:50px; color:#fff; text-align:center; background:#e64a41; border-radius:35px; font-size:25px; transition:all ease-in-out 0.2s;  border:1px solid #e64a41; }
+.feature-box:hover .feature-icon { color:#e64a41; background:#fff; transition:all ease-in-out 0.2s; border:1px solid #e64a41; }
+.feature-box:hover .feature-info h1,
+.feature-box:hover .feature-info h2,
+.feature-box:hover .feature-info h3,
+.feature-box:hover .feature-info h4,
+.feature-box:hover .feature-info h5,
+.feature-box:hover .feature-info h6 { color:#e64a41; transition:all ease-in-out 0.2s; }
+.feature-box .feature-info { padding-left:75px; width:100%; }
+.feature-box .feature-info h1,
+.feature-box .feature-info h2,
+.feature-box .feature-info h3,
+.feature-box .feature-info h4,
+.feature-box .feature-info h5,
+.feature-box .feature-info h6 { margin-bottom:5px; transition:all ease-in-out 0.2s; }
+
+
+
+
+
+
+
+
+
+
+
+.med-margin { margin-top:35px; margin-bottom:35px; }
+.big-margin { margin-top:55px; margin-bottom:55px; }
