@@ -18,6 +18,16 @@ function getScrollTop()
     }
 }
 
+function animate_inview(id)
+{
+	$(id).bind('inview', function (event, visible) {
+		if (visible == true) {
+			$(id).css("visibility", "visible");
+			$(id).css("opacity", "1");
+		}
+	});
+}
+
 $(function() {
 	resize_first_page();
 	
@@ -32,9 +42,9 @@ $(function() {
         {
             if (getScrollTop()<=1600 && getScrollTop()>=0)// Identifies the position for the first background when a scroll event occurs
             {
-                    a=a+35;// Position for the first background, it decreases in 35 pixels
+                    a=a+1;// Position for the first background, it decreases in 35 pixels
                     b=b+1;// Position for the first background, it decreases in 10 pixels
-                    $('.img_1').css('backgroundPosition', '50% '+a+'px');
+                    $('.parallax-2').css('backgroundPosition', '50% '+a+'px');
                     $('.parallax-1').css('backgroundPosition', '0 '+b+'px');
             }
             if (getScrollTop()>=2050 && getScrollTop()<=3650)
@@ -42,16 +52,16 @@ $(function() {
                     c=c+35;// Position for the second background, it decreases in 35 pixels
                     d=d+10;// Position for the second background, it decreases in 10 pixels
                     $('.img_2').css('backgroundPosition', '50% '+c+'px');
-                    $('.bk_1').css('backgroundPosition', '0 '+d+'px');
+                    $('.parallax-2').css('backgroundPosition', '0 '+d+'px');
             }
         }
         else
         {// Scroll down
             if (getScrollTop()>=0 && getScrollTop()<=1600)
             {
-                  a=a-35;// Position for the first background, it decreases in 35 pixels
+                  a=a-1;// Position for the first background, it decreases in 35 pixels
                   b=b-1;// Position for the first background, it decreases in 10 pixels
-                  $('.img_1').css('backgroundPosition', '50% '+a+'px');
+                  $('.parallax-2').css('backgroundPosition', '50% '+a+'px');
                   $('.parallax-1').css('backgroundPosition', '0 '+b+'px');
             }
             if (getScrollTop()>=2050 && getScrollTop()<=3650)
@@ -59,7 +69,7 @@ $(function() {
                   c=c-35;// Position for the second background, it decreases in 35 pixels
                   d=d-10;// Position for the second background, it decreases in 10 pixels
                   $('.img_2').css('backgroundPosition', '50% '+c+'px');
-                  $('.bk_1').css('backgroundPosition', '0 '+d+'px');
+                  $('.parallax-2').css('backgroundPosition', '0 '+d+'px');
             }
         }
         if (getScrollTop()==0)// Adjusts the positions values and resets them to zero during a scroll up event
@@ -68,7 +78,7 @@ $(function() {
             b=parseFloat(0);
             c=parseFloat(400);
             d=parseFloat(0);
-            $('.bk_0').css('backgroundPosition', '0 0');
+            $('.parallax-2').css('backgroundPosition', '0 0');
             $('.parallax-1').css('backgroundPosition', '0 0');
             $('.img_2').css('backgroundPosition', '50% '+400+'px');
             $('.img_1').css('backgroundPosition', '50% '+400+'px');

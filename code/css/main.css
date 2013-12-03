@@ -6,10 +6,14 @@
 
 .top { background:url('../images/fire-bokeh-background-red.jpg'); background-sizz:cover; }
 
+.main-quote { margin:0; padding:0; font-size:30px; }
+.main-quote.white { color:#fff; text-shadow:3px 3px 5px #000; }
+.main-quote.black { color:#444; text-shadow:3px 3px 5px #fff; }
+
 .main-heading { letter-spacing:-1px; color:#787878; margin:35px 0; }
 .main-heading span { font-weight:bold; color:#e64a41; border-bottom:1px dotted #e64a41; }
 
-#features { transition:all ease-in-out 0.2s; }
+.animated { transition:visibility 0.1s ease-in-out 0.6s, opacity ease-in-out 2s; }
 
 .feature-box { float:left; margin:7px 5px; width:100%; }
 .feature-box .feature-icon { float:left; margin:12px 10px 0 0; padding:5px 0 0 0; height:50px; width:50px; color:#fff; text-align:center; background:#e64a41; border-radius:35px; font-size:25px; transition:all ease-in-out 0.2s;  border:1px solid #e64a41; }
@@ -28,15 +32,24 @@
 .feature-box .feature-info h5,
 .feature-box .feature-info h6 { margin-bottom:5px; transition:all ease-in-out 0.2s; }
 
+.team-box { margin:10px 2px; padding:10px; transition:all ease-in-out 0.4s; border:1px transparent solid; }
+.team-box:hover { background:#f0f0f0; transition:all ease-in-out 0.25s; border-radius:10px; border:1px solid #ddd; box-shadow:1px 2px 3px rgba(0,0,0,0.2); }
+.team-box .team-img { text-align:center; }
+.team-box .team-img img { border-radius:50%; border:1px solid transparent; transition:all ease-in-out 0.4s; }
+.team-box:hover .team-img img { border-radius:20%; border:1px solid #ddd; transition:all ease-in-out 0.25s; }
+.team-box .team-info { margin:10px; }
+.team-box .team-social { text-align:center; border-top:1px dashed #ddd; }
 
+.round-icon.small { height:40px; width:40px; font-size:18px; padding:6px 0 0 0; }
+.round-icon { margin:10px 8px 0 0; padding:5px 0 0 0; height:50px; width:50px; color:#fff; text-align:center; background:#e64a41; border-radius:35px; font-size:25px; transition:all ease-in-out 0.2s; border:1px solid #e64a41; display:inline-block; }
+.round-icon:hover { color:#e64a41; background:#fff; transition:all ease-in-out 0.2s; border:1px solid #e64a41; }
 
-
-
-
-
-
-
+.quote-box { background:url('../images/colorful-abstract.jpg') fixed center; background-sizz:cover; }
+.quote-box { padding:125px 0; box-shadow:inset 0px 0px 5px #000; }
 
 
 .med-margin { margin-top:35px; margin-bottom:35px; }
 .big-margin { margin-top:55px; margin-bottom:55px; }
+
+.big-padding-vertical { padding-top:55px; padding-bottom:55px; }
+.extra-big-padding-vertical { padding-top:125px; padding-bottom:125px; }
