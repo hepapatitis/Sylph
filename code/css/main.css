@@ -13,6 +13,8 @@
 a { transition:all ease-in-out 0.15s; }
 a:hover { transition:all ease-in-out 0.15s; }
 
+footer { text-align:center; text-transform:uppercase; color:#aaa; margin:25px 0; font-size:11px; }
+
 .main-quote { margin:0; padding:0; font-size:30px; }
 .main-quote.white { color:#fff; text-shadow:3px 3px 5px rgba(0,0,0,0.6); }
 .main-quote.black { color:#444; text-shadow:3px 3px 5px #fff; }
@@ -55,6 +57,8 @@ a:hover { transition:all ease-in-out 0.15s; }
 .quote-box-bg { background:url('../images/colorful-abstract.jpg') 50% 0 no-repeat fixed; background-size:cover; }
 .quote-box { padding:125px 0; box-shadow:inset 0px 0px 5px rgba(0,0,0,0.5); }
 
+.testimonial { text-align:center; display:block; font-size:18px; }
+.testimonial cite { text-align:center; display:block; font-size:12px; text-transform:uppercase; margin-top:15px; }
 
 .med-margin { margin-top:35px; margin-bottom:35px; }
 .big-margin { margin-top:55px; margin-bottom:55px; }

@@ -13,6 +13,10 @@ function animate_inview(id)
 	});
 }
 
+$('.carousel').carousel({
+	interval: 5500
+})
+
 $(function() {
 	resize_first_page();
 
