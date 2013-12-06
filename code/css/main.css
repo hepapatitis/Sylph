@@ -57,8 +57,11 @@ footer { text-align:center; text-transform:uppercase; color:#aaa; margin:25px 0;
 .quote-box-bg { background:url('../images/colorful-abstract.jpg') 50% 0 no-repeat fixed; background-size:cover; }
 .quote-box { padding:125px 0; box-shadow:inset 0px 0px 5px rgba(0,0,0,0.5); }
 
-.testimonial { text-align:center; display:block; font-size:18px; }
-.testimonial cite { text-align:center; display:block; font-size:12px; text-transform:uppercase; margin-top:15px; }
+.testimonial { text-align:center; display:block; font-size:18px; border-left:0; }
+.testimonial cite { text-align:center; display:block; font-size:12px; text-transform:uppercase; margin-top:15px; color:#777; }
+
+.carousel { padding-bottom:50px; }
+.carousel-indicators li { border:1px solid #e64a41; background:#e64a41; transition:all ease-in-out 0.2s; }
 
 .med-margin { margin-top:35px; margin-bottom:35px; }
 .big-margin { margin-top:55px; margin-bottom:55px; }
