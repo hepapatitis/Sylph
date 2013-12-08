@@ -43,6 +43,9 @@ $(function() {
 		
     });
 	
+	// Mix It Up Plugin
+	$('#Grid').mixitup();
+	
 	$(window).resize(function () {
 		resize_first_page();
 	});
