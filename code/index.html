@@ -16,10 +16,14 @@
                 padding-bottom: 20px;
             }
         </style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type='text/css'>
+		<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Lato:300,400' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+        <link rel="stylesheet" href="css/main.css" type='text/css' data-s="main">
+        <link rel="stylesheet" href="css/style-switch.css" type='text/css'>
+
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css" media="screen" />
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -31,16 +35,15 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bars"></span> MENU
           </button>
-          <a class="navbar-brand" href="#">Slyph</a>
+          <a class="navbar-brand" href="#top">Slyph</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="active"><a href="#top">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -59,9 +62,157 @@
       </div>
     </div>
 
-	<div class="top first-page">
-	</div>
+	<div id="top" class="first-page">
+		<!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
 
+		<div class="tp-banner-container">
+			<div class="tp-banner" >
+				<ul>
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+						<!-- MAIN IMAGE -->
+						<img src="images/red-bg.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+
+						<!-- LAYERS -->
+						<div class="tp-caption mediumlarge_light_white_center customin customout start"
+							data-x="100"
+							data-hoffset="0"
+							data-y="110"
+
+							data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+							data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="1000"
+							data-start="500"
+							data-easing="Back.easeInOut"
+							data-endspeed="300"><strong>MOBILE FRIENDLY</strong><br />OPTIMIZED
+						</div>
+						
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption sfb"
+							data-x="550"
+							data-y="45"
+							data-speed="900"
+							data-start="1150"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6"><img src="images/services-icon-web.png" />
+						</div>
+						
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption mediumblackbg lfb"
+							data-x="75"
+							data-y="215"
+							data-speed="1250"
+							data-start="1950"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">Created using Twitter Bootstrap 3, a mobile friendly framework.
+						</div>
+					</li>
+					
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+						<!-- MAIN IMAGE -->
+						<img src="images/font-awesome-bg.jpg" alt="slidebg2"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+
+						<!-- LAYERS -->
+						<div class="tp-caption sfb"
+							data-x="center"
+							data-y="-100"
+							data-speed="1000"
+							data-start="450"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6"><img src="images/font-awesome.png" />
+						</div>
+						
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption mediumlarge_light_white_center customin customout start"
+							data-x="center"
+							data-y="400"
+							data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:90;scaleX:1.25;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+							data-customout="x:0;y:0;z:0;rotationX:45;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="1000"
+							data-start="750"
+							data-easing="Back.easeInOut"
+							data-endspeed="300"><strong>Over 400++</strong><br /> Retina Ready Icons
+						</div>
+						
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption mediumblackbg lfb"
+							data-x="center"
+							data-y="525"
+							data-speed="1450"
+							data-start="1250"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">Enhanced with Font Awesome
+						</div>
+					</li>
+
+					<!-- SLIDE  -->
+					<li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+						<!-- MAIN IMAGE -->
+						<img src="images/dark-wood-bg.jpg" alt="slidebg3"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+
+						<!-- LAYERS -->
+						<div class="tp-caption mediumlarge_light_white_center customin customout start"
+							data-x="center"
+							data-hoffset="0"
+							data-y="-80"
+
+							data-customin="x:0;y:0;z:0;rotationX:-90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+							data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							data-speed="1000"
+							data-start="500"
+							data-easing="Back.easeInOut"
+							data-endspeed="300">Create cool slides with <br /><strong>SLIDER REVOLUTION</strong>
+						</div>
+						
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption sfb"
+							data-x="center"
+							data-y="95"
+							data-speed="900"
+							data-start="1950"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6"><img src="images/slider-revolution.png" />
+						</div>
+						
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption mediumblackbg lfb"
+							data-x="center"
+							data-y="25"
+							data-speed="1250"
+							data-start="1350"
+							data-easing="Power4.easeOut"
+							data-endspeed="300"
+							data-endeasing="Power1.easeIn"
+							data-captionhidden="off"
+							style="z-index: 6">A popular jQuery plugins with more than 6000 downloads
+						</div>
+					</li>
+
+				</ul>
+				<div class="tp-bannertimer"></div>
+			</div>
+		</div>
+	</div>
+	
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="white-bg big-padding-vertical">
 		<div id="features" class="animated container" style="visibility:hidden; opacity:0;">
@@ -206,15 +357,61 @@
 					
 					<!-- GRID -->			
 					<ul id="Grid">
-						<li class="mix website" data-cat="website"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						<li class="mix mobile_apps" data-cat="mobile_apps"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						<li class="mix mobile_apps" data-cat="mobile_apps"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						<li class="mix website" data-cat="website"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						<li class="mix website" data-cat="website"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						<li class="mix others" data-cat="others"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive" /></li>
-						
+						<li class="mix website" data-cat="website">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
+						<li class="mix mobile_apps" data-cat="mobile_apps">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
+						<li class="mix mobile_apps" data-cat="mobile_apps">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
+						<li class="mix website" data-cat="website">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
+						<li class="mix website" data-cat="website">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
+						<li class="mix others" data-cat="others">
+							<div class="paper">
+								<a class="fancybox" rel="portfolio" href="images/fire-bokeh-background-red.jpg"><img src="images/fire-bokeh-background-red.jpg" class="img-responsive main-image" /></a>
+								<h4 class="title">Red Bokeh</h4>
+								<div class="desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet posuere nisl. Aliquam faucibus porttitor felis et dictum. Morbi ac vestibulum orci. Aliquam vitae fringilla dolor.</p>
+								</div>
+							</div>
+						</li>
 					</ul>
-					
 				</div>
 			</div>
 		</div>
@@ -290,12 +487,41 @@
 			</div>
 		</div>
 	</div>
+	<div id="social-media" class="animated" style="visibility:hidden; opacity:0;">
+		<div class="container big-margin">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="main-heading text-center">or visit us in <span>social media</span></h2>
+					<div class="text-center">
+						<a class="round-icon big" href="#"><i class="fa fa-facebook"></i></a>
+						<a class="round-icon big" href="#"><i class="fa fa-twitter"></i></a>
+						<a class="round-icon big" href="#"><i class="fa fa-google-plus"></i></a>
+						<a class="round-icon big" href="#"><i class="fa fa-instagram"></i></a>
+						<a class="round-icon big" href="#"><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
-
-      <footer>
-        <p>&copy; Slyph Template | Bootstrap v3.0.2</p>
-      </footer>
+		<div class="text-center">
+			<a class="to-top" href="#top"><i class="fa fa-chevron-up top-ico"></i><br />back to top</a>
+		</div>
+		<footer>
+			<p>&copy; Slyph Template | Bootstrap v3.0.2</p>
+		</footer>
+	</div>
 	
+	<div class="style-switch">
+		<a class="ss-toggle" href="javascript:void(0)" onclick="toggleSwitcher()"><i class="fa fa-cog"></i></a>
+		<div class="ss-content">
+			<h1>Style Switcher</h1>
+			<ul class="colours">
+				<li><a class="colorred" href="javascript:void(0)"></a></li>
+				<li><a class="colorblue" href="javascript:void(0)"></a></li>
+				<li><a class="colorgreen" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
 	</div>
 	
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -308,7 +534,17 @@
 		<script src="js/jquery.parallax-1.1.3.js"></script>
         <script src="js/main.js"></script>
 		
-        
+		<!-- FANCYBOX 2 SCRIPTS  -->
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
         <script>
 			/*
@@ -320,18 +556,54 @@
         </script>
 		
 		<script>
+			var revapi;
+			
 			$(document).ready(function(){
-				//$("html").niceScroll();
+				$("html").niceScroll();
 				
 				animate_inview("#features");
 				animate_inview("#random-quote");
 				animate_inview("#testimony");
 				animate_inview("#contact");
 				animate_inview("#team");
+				animate_inview("#social-media");
 				
-				$('#top').parallax("50%", 0.1);
-				$('#quote-box-bg').parallax("50%", 0.1);
+				$(".fancybox").fancybox();
+				
+				revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:15000,
+					startwidth:1170,
+					startheight:500,
+					hideThumbs:10,
+					fullWidth:"off",
+					fullScreen:"on",
+					fullScreenOffsetContainer: ""
+				});
 			});
+			
+			// Color changer
+			$(".colorblue").click(function(){
+				$("link[data-s=main]").attr("href", "css/main-blue.css");
+				return false;
+			});
+			$(".colorred").click(function(){
+				$("link[data-s=main]").attr("href", "css/main-red.css");
+				return false;
+			});
+			$(".colorgreen").click(function(){
+				$("link[data-s=main]").attr("href", "css/main-green.css");
+				return false;
+			});
+			
+			function toggleSwitcher()
+			{
+				
+				if($(".style-switch").hasClass("off"))
+					$(".style-switch").removeClass("off");
+				else
+					$(".style-switch").addClass("off");
+			}
 		</script>
 		
     </body>
