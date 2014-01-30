@@ -3,16 +3,6 @@ function resize_first_page()
 	$('.first-page').css('min-height', $( window ).height());
 }
 
-function animate_inview(id)
-{
-	$(id).bind('inview', function (event, visible) {
-		if (visible == true) {
-			$(id).css("visibility", "visible");
-			$(id).css("opacity", "1");
-		}
-	});
-}
-
 $('.carousel').carousel({
 	interval: 5500
 })
@@ -60,5 +50,18 @@ $(function() {
 			extramargin -= 50;
 		$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination+extramargin}, 500 );
 		return false;
+	});
+	
+	// Perform Animation
+	$("[data-animate]").each(function(index) {
+		$(this).bind('inview', function (event, visible) {
+			if (visible == true) {
+				if(!$(this).hasClass('animated'))
+				{
+					$(this).addClass('animated');
+					$(this).addClass($(this).attr("data-animate"));
+				}
+			}
+		});
 	});
 });

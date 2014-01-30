@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Lato:300,400' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
         <link rel="stylesheet" href="css/main.css" type='text/css' data-s="main">
+        <link rel="stylesheet" href="css/animate.css" type='text/css' data-s="main">
         <link rel="stylesheet" href="css/style-switch.css" type='text/css'>
 
 		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
@@ -215,7 +216,7 @@
 	
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="white-bg big-padding-vertical">
-		<div id="features" class="animated container" style="visibility:hidden; opacity:0;">
+		<div id="features" data-animate="bounceIn" class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<h2 class="main-heading text-center">what this template <span>offer</span></h2>
@@ -267,7 +268,7 @@
 		</div>
 	</div>
 	<div class="white-bg big-padding-vertical">
-		<div id="team" class="animated" style="visibility:hidden; opacity:0;">
+		<div id="team" data-animate="fadeInUp">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -419,11 +420,11 @@
 	<div class="quote-box quote-box-bg">
 		<div class="container big-margin">
 			<div class="col-xs-12">
-				<p id="random-quote" class="main-quote white text-center animated" style="visibility:hidden; opacity:0;">use the <strong>style switcher</strong> to see different colour.</p>
+				<p id="random-quote" class="main-quote white text-center" data-animate="fadeInDown">use the <strong>style switcher</strong> to see different colour.</p>
 			</div>
 		</div>
 	</div>
-	<div id="testimony" class="animated" style="visibility:hidden; opacity:0;">
+	<div id="testimony" data-animate="bounceIn">
 		<div class="container big-margin">
 			<div class="row">
 				<div class="col-xs-12">
@@ -459,7 +460,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="contact" class="animated" style="visibility:hidden; opacity:0;">
+	<div id="contact" data-animate="bounceIn">
 		<div class="container big-margin">
 			<div class="row">
 				<div class="col-xs-12">
@@ -487,7 +488,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="social-media" class="animated" style="visibility:hidden; opacity:0;">
+	<div id="social-media" data-animate="bounceIn">
 		<div class="container big-margin">
 			<div class="row">
 				<div class="col-xs-12">
@@ -560,13 +561,6 @@
 			
 			$(document).ready(function(){
 				$("html").niceScroll();
-				
-				animate_inview("#features");
-				animate_inview("#random-quote");
-				animate_inview("#testimony");
-				animate_inview("#contact");
-				animate_inview("#team");
-				animate_inview("#social-media");
 				
 				$(".fancybox").fancybox();
 				
