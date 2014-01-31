@@ -83,7 +83,7 @@ footer { text-align:center; text-transform:uppercase; color:#aaa; margin:25px 0;
 .round-icon { margin:10px 8px 0 0; padding:5px 0 0 0; height:50px; width:50px; color:#fff; text-align:center; background:#19966e; border-radius:50%; font-size:25px; transition:all ease-in-out 0.2s; border:1px solid #19966e; display:inline-block; }
 .round-icon:hover { color:#19966e; background:#fff; transition:all ease-in-out 0.2s; border:1px solid #19966e; }
 
-.quote-box-bg { background:url('../images/red-grunge-background.jpg') 50% 0 no-repeat fixed; background-size:cover; }
+.quote-box-bg { background:url('../images/blurred-city.jpg') 50% 0 no-repeat fixed; background-size:cover; }
 .quote-box { padding:110px 0; box-shadow:inset 0px 0px 5px rgba(0,0,0,0.5); }
 
 .testimonial { text-align:center; display:block; font-size:18px; border-left:0; }

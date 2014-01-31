@@ -417,7 +417,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="quote-box quote-box-bg">
+	<div class="quote-box quote-box-bg" data-type="background" data-speed="10">
 		<div class="container big-margin">
 			<div class="col-xs-12">
 				<p id="random-quote" class="main-quote white text-center" data-animate="fadeInDown">use the <strong>style switcher</strong> to see different colour.</p>
@@ -513,6 +513,10 @@
 		</footer>
 	</div>
 	
+	<!--
+		Colour Switcher
+		Remove the whole <div class="style-switch"></div> tag to remove the colour switcher
+	-->
 	<div class="style-switch">
 		<a class="ss-toggle" href="javascript:void(0)" onclick="toggleSwitcher()"><i class="fa fa-cog"></i></a>
 		<div class="ss-content">
@@ -557,24 +561,8 @@
         </script>
 		
 		<script>
-			var revapi;
-			
-			$(document).ready(function(){
-				$("html").niceScroll();
-				
-				$(".fancybox").fancybox();
-				
-				revapi = jQuery('.tp-banner').revolution(
-				{
-					delay:15000,
-					startwidth:1170,
-					startheight:500,
-					hideThumbs:10,
-					fullWidth:"off",
-					fullScreen:"on",
-					fullScreenOffsetContainer: ""
-				});
-			});
+			//	Colour Switcher
+			//	Remove these <script> tag to remove the colour switcher
 			
 			// Color changer
 			$(".colorblue").click(function(){
