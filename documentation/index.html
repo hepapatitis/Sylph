@@ -27,33 +27,15 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div id="top-nav" class="navbar navbar-fixed-top nav-white-container">
+    <div id="top-nav" class="navbar nav-white-container">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="fa fa-bars"></span> MENU
           </button>
-          <a class="navbar-brand" href="#top">Slyph</a>
+          <a class="navbar-brand" href="#top"><img src="images/logo-color.png" alt="Sylph" /></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#top">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -83,11 +65,20 @@
 					</div>
 					<div class="feature-box">
 						<div class="feature-icon">
-							<i class="fa fa-font"></i>
+							<i class="fa fa-hdd-o"></i>
 						</div>
 						<div class="feature-info">
 							<h4>Fancybox</h4>
 							<p>A javascript that shows lightbox popup when clicking an image.</p>
+						</div>
+					</div>
+					<div class="feature-box">
+						<div class="feature-icon">
+							<i class="fa fa-font"></i>
+						</div>
+						<div class="feature-info">
+							<h4>Animate.css</h4>
+							<p>A single css file that helps you to perform animation.</p>
 						</div>
 					</div>
 				</div>
@@ -118,43 +109,42 @@
 				<div class="col-xs-12">
 					<h2 class="main-heading text-center">how to <span>use</span> one of the available colours?</h2>
 					<p>There are three available <code>main-<strong>xxx</strong>.css</code></p> 
-					<p>The element should look like this:</p>
+					<p>Simply change the filename into <code>main.css</code> and it will run smoothly.</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="main-heading text-center">how to use <span>parallax</span> background?</h2>
+					<p>You will need the following attribute in your element <code>data-type="background" data-speed="{speed}"</code></p> 
+					<p>From the actual file, it looks like this:</p>
 					<pre class='brush: html'>
-						&lt;div class="animated" style="visibility:hidden; opacity:0;"&gt;
-						// Content Here
-						&lt;/div&gt;</pre>
-						
-					<p>After that you will need to assign an <code>ID</code> to the element add the following javascript (with the same ID).</p>
-					<p>The <strong>final result</strong> is as follow:</p>
-					<pre class='brush: html js'>
-						<div id="features" class="animated" style="visibility:hidden; opacity:0;">
-							// Content Here
-						</div>
-						<script>
-							animate_inview("#features");
-						</script></pre>
+						&lt;div class="quote-box quote-box-bg" data-type="background" data-speed="10"&gt;
+							...
+						&lt;/div&gt;
+					</pre>
+					<p>The next thing is to set the <strong>css</strong> to be like this:</p>
+					<pre class='brush: css'>
+						.quote-box-bg {
+							background:url('../images/blurred-city.jpg') 50% 0 no-repeat fixed;
+							background-size:cover;
+						}
+					</pre>
+					<p>The important part is to have <code>50% 0 no-repeat fixed</code> for <strong>background</strong> attribute.</p>
 				</div>
 			</div>
 			<hr />
 			<div class="row">
 				<div class="col-xs-12">
 					<h2 class="main-heading text-center">how to trigger <span>fade animation</span> when content is in view?</h2>
-					<p>In order to trigger the animation, you have to add the following style <code>visibility:hidden; opacity:0;</code> and <code>animated</code> class to the element tag (e.g: &lt;p&gt; or &lt;div&gt;).</p>
+					<p>In order to trigger the animation, you have to add the following style <code>data-animation="{animation}"</code> and make sure you <code>animate.css</code> is loaded if you ever change anything.</p>
 					<p>The element should look like this:</p>
 					<pre class='brush: html'>
-						&lt;div class="animated" style="visibility:hidden; opacity:0;"&gt;
-						// Content Here
+						&lt;div data-animation="bounce"&gt;
+							...
 						&lt;/div&gt;</pre>
 						
-					<p>After that you will need to assign an <code>ID</code> to the element add the following javascript (with the same ID).</p>
-					<p>The <strong>final result</strong> is as follow:</p>
-					<pre class='brush: html js'>
-						<div id="features" class="animated" style="visibility:hidden; opacity:0;">
-							// Content Here
-						</div>
-						<script>
-							animate_inview("#features");
-						</script></pre>
+					<p>For a full list of animation, check out <a rel="nofollow" href="http://daneden.github.io/animate.css/" target="_blank">Animate.css Website</a></p>
 				</div>
 			</div>
 		</div>
